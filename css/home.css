@@ -255,6 +255,9 @@ footer .contact-form button:hover{
 /* media queries */
 
 @media screen and (min-width:750px) {
+    header{
+        text-align: center;
+    }
     header #logo{
         display: inline-block;
         width: 30%;
