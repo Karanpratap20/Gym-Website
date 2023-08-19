@@ -36,7 +36,7 @@ header .active{
 /* *** header*/
 
 #intro{
-    min-height: 400px;
+    min-height: 450px;
     background-image: url(../img/intro2.jpg);
     background-size: cover;
     background-attachment: fixed;
