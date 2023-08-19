@@ -1,0 +1,253 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #edeff0;
+}
+header {
+    background-color: white;
+}
+header a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+header #logo{
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+header nav li{
+    display: inline-block;
+}
+header nav a{
+    transition: background-color 0.5s ease-in-out;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+header .active{
+    background-color: rgba(0,0,0,0.2);
+}
+/* header */
+
+#showcase{
+    min-height: 350px;
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#showcase .text{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    width: 100%;
+    bottom: 150px;
+}
+#showcase .text h2{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/* ****Showcase */
+
+#few-words-about-us .words-container{
+    max-width: 500px;
+    margin: auto;
+}
+.word {
+    margin: 20px 0px;
+}
+.words-container h3,
+.words-container p{
+    padding: 10px;
+    text-align: center;
+}
+.call-to-action{
+    text-align: center;
+}
+.call-to-action a{
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 20px 0px 50px;
+    color: #fff;
+    background-color: gray;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+}
+.call-to-action a:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+/* ***few words */
+
+#history{
+    background-color: #fff;
+    text-align: center;
+}
+#history h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.event{
+    margin: 10px;
+}
+.event p{
+    padding: 5px;
+}
+.event-date{
+    color: grey;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event-title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* ***History */
+#our-team{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#our-team h2{
+    padding: 20px;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.member{
+    margin: 15px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);    
+}
+.member img{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 50%;
+}
+/* *** Memeber */
+#faq{
+    background-color: #fff;
+}
+#faq h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faq{
+    margin: 10px;
+}
+.faq p{
+    padding: 10px;
+}
+.faq .q{
+    font-style: italic;
+    color: gray;
+    font-weight: bold;
+}
+.faq span{
+    font-size: 1.2em;
+    padding-right: 5px;
+    font-style: italic;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+}
+footer .services li{
+    padding: 10px 0px;
+}
+footer .services h5{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+footer .serices{
+    margin: 20px;
+}
+footer a{
+    color: white;
+}
+footer .contact-info p{
+    padding: 10px 0px; 
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: box-shadow 0.5s;
+    margin: 10px 0px;
+    border: none;
+}
+footer .contact-form button:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+/* ***footer */
+
+
+/* media queries */
+
+@media screen and (min-width:750px) {
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    .event,
+    .member,
+    .faq{
+        float: left;
+        width: 45%;
+        margin: 2%;
+    }
+    .events-container:after,
+    .member-container:after,
+    .faq-container:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .call-to-action{
+        clear: both;
+    }
+
+    footer .services,
+    footer .contact-info{
+        width: 46%;
+        display: inline-block;
+    }
+    footer .contact-form input{
+        width: 70%; 
+    }
+    footer .contact-form button{
+        width: 20%;
+    }
+}
