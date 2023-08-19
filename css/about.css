@@ -41,6 +41,7 @@ header .active{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    background-position: center;
 }
 #showcase .text{
     background-color: rgba(0,0,0,0.3);

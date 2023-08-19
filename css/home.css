@@ -40,6 +40,7 @@ header .active{
     background-image: url(../img/intro2.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 .intro-text{
     text-align: center;
