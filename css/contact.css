@@ -13,8 +13,8 @@ header {
 header a{
     display: inline-block;
     padding: 10px;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     color: black;
 }
 header #logo{
@@ -38,7 +38,7 @@ header .active{
 
 #showcase{
     min-height: 450px;
-    background-image: url(../img/intro.jpg);
+    background-image: url(../img/x1.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -57,108 +57,59 @@ header .active{
 }
 /* ****Showcase */
 
-#few-words-about-us .words-container{
-    max-width: 500px;
-    margin: auto;
-}
-.word {
-    margin: 20px 0px;
-}
-.words-container h3,
-.words-container p{
-    padding: 10px;
+
+
+
+.call-to-action {
     text-align: center;
-}
-.call-to-action{
-    text-align: center;
-}
-.call-to-action a{
-    display: inline-block;
-    padding: 15px 10px;
-    margin: 20px 0px 50px;
-    color: #fff;
-    background-color: gray;
+
     text-decoration: none;
-    transition: box-shadow 0.5s;
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 15px;
+    margin: 15px 0px;
+    transition: all 0.5s;
+    border: none;
 }
-.call-to-action a:hover{
+.call-to-action:hover{
     box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
 }
 /* ***few words */
 
-#history{
-    background-color: #fff;
+#get-in-touch{
+    background-color: white;
+}
+#get-in-touch h2{
     text-align: center;
-}
-#history h2{
     padding: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 30px;
 }
-.event{
-    margin: 10px;
-}
-.event p{
-    padding: 5px;
-}
-.event-date{
-    color: grey;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-.event-title{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-/* ***History */
-#our-team{
-    text-align: center;
-    padding-bottom: 50px;
-}
-#our-team h2{
-    padding: 20px;
-    font-size: 1.5em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-}
-.member{
-    margin: 15px;
-    padding: 5px;
-    padding-bottom: 15px;
-    background-color: #fff;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);    
-}
-.member img{
-    height: 150px;
-    width: 150px;
-    margin: 10px;
-    border-radius: 50%;
-}
-/* *** Memeber */
-#faq{
-    background-color: #fff;
-}
-#faq h2{
-    padding: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-    text-align: center;
-}
-.faq{
-    margin: 10px;
-}
-.faq p{
+#get-in-touch p{
+    text-align: left;
     padding: 10px;
-}
-.faq .q{
     font-style: italic;
-    color: gray;
-    font-weight: bold;
 }
-.faq span{
-    font-size: 1.2em;
-    padding-right: 5px;
-    font-style: italic;
+#get-in-touch form{
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+#get-in-touch form input,
+#get-in-touch form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid transparent;
+    background-color: #edeff0;;
+    transition: all 0.3s;
+}
+#get-in-touch form input:hover,
+#get-in-touch form textarea:hover{
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+#get-in-touch form textarea{
+    min-height: 90px;
 }
 
 
@@ -214,6 +165,9 @@ footer .contact-form button:hover{
 /* media queries */
 
 @media screen and (min-width:750px) {
+    header{
+        text-align: center;
+    }
     header #logo{
         display: inline-block;
         width: 30%;
@@ -223,27 +177,8 @@ footer .contact-form button:hover{
         display: inline-block;
         width: 60%;
     }
-    #history p{
-        width: 60%;
-        margin: auto;
-    }
-    .event,
-    .member,
-    .faq{
-        float: left;
-        width: 46%;
-        margin: 20px;
-    }
-    .events-container:after,
-    .member-container:after,
-    .faq-container:after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    .call-to-action{
-        clear: both;
-    }
+    
+    
 
     footer .services,
     footer .contact-info{
